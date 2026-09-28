@@ -1,0 +1,45 @@
+# pip requirements format; .tex filename retained as requested.
+# Direct dependencies pinned from the package registries on 2026-09-27.
+# Install with: python -m pip install -r requirements.tex
+# R and compiled-tool pins are in Dockerfile. Transitive dependencies are
+# resolved at build time; this file is not a complete transitive lockfile.
+
+# Variant tables, plots, reference sequences, and VEP/dbNSFP access.
+numpy==2.5.3
+scipy==1.18.1
+pandas==2.3.3
+matplotlib==3.11.2
+pysam==0.24.1
+requests==2.34.2
+biopython==1.88
+openpyxl==3.1.5
+pyfaidx==0.9.0.4
+
+# AlphaGenome API client and local Enformer inference.
+alphagenome==0.9.0
+enformer-pytorch==0.8.12
+torch==2.14.0
+# Required by enformer-pytorch 0.8.12; newer Transformers is incompatible.
+transformers[torch]==4.56.2
+huggingface-hub==0.36.2
+# kipoiseq/kipoi pins attrs<=21.4.0, incompatible with current Jupyter.
+# The Enformer script uses pyfaidx directly for the same FASTA slice.
+
+# Structures, docking, and ligand preparation.
+biotite==1.7.1
+MDAnalysis==2.10.0
+prody==2.6.1
+pyparsing==3.1.1
+meeko==0.8.0
+rdkit==2026.3.6
+openbabel-wheel==3.1.1.23
+# The Linux x86_64 ACPYPE wheel includes its required AmberTools binaries.
+acpype==2026.9.4
+haddock3==2026.8.0
+# HADDOCK3 requires pandas 2.x and this exact PRODIGY release.
+prodigy-prot==2.3.0
+prodigy-lig==1.1.4
+
+# Browser workspace; Python and R kernels share one container.
+jupyterlab==4.6.4
+ipykernel==7.3.0

@@ -1,0 +1,196 @@
+# In ChimeraX, first use cd to set the project root.
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :45 LYS log false
+save outputs/structural_analysis/mutants/E45K.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :62 ARG log false
+save outputs/structural_analysis/mutants/L62R.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :63 ARG log false
+save outputs/structural_analysis/mutants/G63R.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :108 LYS log false
+save outputs/structural_analysis/mutants/R108K.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :108 GLY log false
+save outputs/structural_analysis/mutants/R108G.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :154 HIS log false
+save outputs/structural_analysis/mutants/P154H.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :222 CYS log false
+save outputs/structural_analysis/mutants/R222C.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :223 TYR log false
+save outputs/structural_analysis/mutants/C223Y.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :229 CYS log false
+save outputs/structural_analysis/mutants/S229C.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :240 TYR log false
+save outputs/structural_analysis/mutants/C240Y.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :252 CYS log false
+save outputs/structural_analysis/mutants/R252C.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :254 ILE log false
+save outputs/structural_analysis/mutants/F254I.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :256 TYR log false
+save outputs/structural_analysis/mutants/D256Y.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :256 GLY log false
+save outputs/structural_analysis/mutants/D256G.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :263 PRO log false
+save outputs/structural_analysis/mutants/T263P.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :270 CYS log false
+save outputs/structural_analysis/mutants/Y270C.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :289 VAL log false
+save outputs/structural_analysis/mutants/A289V.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :289 THR log false
+save outputs/structural_analysis/mutants/A289T.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :304 TYR log false
+save outputs/structural_analysis/mutants/H304Y.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :331 ARG log false
+save outputs/structural_analysis/mutants/G331R.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :363 ILE log false
+save outputs/structural_analysis/mutants/T363I.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :571 SER log false
+save outputs/structural_analysis/mutants/C571S.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :596 ARG log false
+save outputs/structural_analysis/mutants/P596R.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :596 SER log false
+save outputs/structural_analysis/mutants/P596S.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :598 VAL log false
+save outputs/structural_analysis/mutants/G598V.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :598 ALA log false
+save outputs/structural_analysis/mutants/G598A.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :608 CYS log false
+save outputs/structural_analysis/mutants/W608C.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :620 TYR log false
+save outputs/structural_analysis/mutants/C620Y.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :620 TRP log false
+save outputs/structural_analysis/mutants/C620W.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :624 PHE log false
+save outputs/structural_analysis/mutants/C624F.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :628 TYR log false
+save outputs/structural_analysis/mutants/C628Y.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :628 PHE log false
+save outputs/structural_analysis/mutants/C628F.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :636 TYR log false
+save outputs/structural_analysis/mutants/C636Y.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :651 MET log false
+save outputs/structural_analysis/mutants/V651M.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :675 TRP log false
+save outputs/structural_analysis/mutants/R675W.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :709 LYS log false
+save outputs/structural_analysis/mutants/E709K.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :774 MET log false
+save outputs/structural_analysis/mutants/V774M.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :861 GLN log false
+save outputs/structural_analysis/mutants/L861Q.pdb format pdb
+close session
+
+open outputs/structural_analysis/EGFR_mature_WT.pdb
+swapaa :1068 GLN log false
+save outputs/structural_analysis/mutants/R1068Q.pdb format pdb
+close session
+

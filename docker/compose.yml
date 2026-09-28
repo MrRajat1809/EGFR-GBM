@@ -1,0 +1,27 @@
+# From the project root:
+#   docker compose -f docker/compose.yml up --build
+# Open the token-bearing localhost:8888 URL printed by Jupyter.
+# Supply ALPHAGENOME_API_KEY in the host environment only when needed.
+services:
+  egfr:
+    image: egfr-unified:2026-09-27
+    platform: linux/amd64
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        BUILD_JOBS: "4"
+    ports:
+      - "127.0.0.1:8888:8888"
+    volumes:
+      - ../:/project
+      - egfr-cache:/home/egfr/.cache
+    environment:
+      - ALPHAGENOME_API_KEY
+    shm_size: "2gb"
+    working_dir: /project
+    stdin_open: true
+    tty: true
+
+volumes:
+  egfr-cache:

@@ -1,0 +1,66 @@
+run_dir = "run"
+
+molecules = [
+    "/mnt/d/EGFR_pipeline/results/haddock_runs/C240Y_Cetuximab/input/C240Y_ECD_clean_A.pdb",
+    "/mnt/d/EGFR_pipeline/results/haddock_runs/C240Y_Cetuximab/input/Cetuximab_Fab_merged.pdb"
+]
+
+########################################
+# 0) Topology
+########################################
+['topoaa.1']
+
+########################################
+# 1) Rigid-body docking (it0)
+########################################
+['rigidbody.1']
+ambig_fname = "/mnt/d/EGFR_pipeline/results/haddock_runs/C240Y_Cetuximab/restraints/ambig_clean.tbl"
+sampling = 500
+
+########################################
+# 2) Score/evaluate it0 models
+########################################
+['caprieval.1']
+
+########################################
+# 3) Select best it0 models for refinement
+########################################
+['seletop.1']
+select = 200
+
+########################################
+# 4) Semi-flexible refinement (it1)
+########################################
+['flexref.1']
+ambig_fname = "/mnt/d/EGFR_pipeline/results/haddock_runs/C240Y_Cetuximab/restraints/ambig_clean.tbl"
+
+########################################
+# 5) Score/evaluate refined models
+########################################
+['caprieval.2']
+
+########################################
+# 6) Select best refined models for clustering
+########################################
+['seletop.2']
+select = 100
+
+########################################
+# 7) Cluster by FCC
+########################################
+['clustfcc.1']
+
+########################################
+# 8) Pick top clusters and representatives
+########################################
+['seletopclusts.1']
+
+########################################
+# 9) Score/evaluate the final clusters
+########################################
+['caprieval.3']
+
+########################################
+# 10) Interface contact map / summary
+########################################
+['contactmap.1']
